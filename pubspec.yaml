@@ -1,0 +1,78 @@
+name: e_commerce_pro
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+
+#----PRODUCTION---------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UTILITY PACKAGE
+  http: ^1.1.0 //POUR API
+  intl: ^0.18.1 //pour API
+  logger: ^2.0.1 //comme sl5j de java
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.3.10
+  smooth_page_indicator: ^1.1.0 //
+
+  #Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.2
+
+  #State Management
+  get: ^4.6.5
+  get_storage: ^2.1.1
+
+  #Product Specific
+  
+
+
+#----DEV MOD---------#
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/fonts/
+    - assets/icons/brands/
+    - assets/images/on_boarding_images
+    - assets/logos/
+
+  #-------------------Local Fonts------------------------#
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
+

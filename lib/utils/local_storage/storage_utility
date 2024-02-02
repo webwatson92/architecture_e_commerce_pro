@@ -1,0 +1,31 @@
+class TLocalStorage{
+    static final TLocalStorage _instance = TLocalStorage._internal();
+
+    factory fLocalStorage(){
+        return _instance;
+    }
+
+    TLocalStorage._internal();
+
+    final _storage = GetStorage();
+
+    //Generic methode to save data
+    Future<void> saveData<T>(String key, T value) async {
+        await _storage.write(key, value);
+    }
+
+    //Generic methode to read data
+    T? readData<T>(String key){
+        return _storage.read<T>(key);
+    }
+
+    //Generic methode to remove data
+    T? removeData<T>(String key) async {
+        await _storage.remove(key);
+    }
+
+    //Clear all data in storage
+    Future<void> clearAll() async {
+        await _storage.erase();
+    }
+}
