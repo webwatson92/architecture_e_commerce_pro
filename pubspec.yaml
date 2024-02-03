@@ -14,12 +14,12 @@ dependencies:
     sdk: flutter
 
   # UTILITY PACKAGE
-  http: ^1.1.0 //POUR API
-  intl: ^0.18.1 //pour API
-  logger: ^2.0.1 //comme sl5j de java
+  http: ^1.1.0 #POUR API 
+  intl: ^0.18.1 #pour API
+  logger: ^2.0.1 #comme sl5j de java
   url_launcher: ^6.1.12
   flutter_native_splash: ^2.3.10
-  smooth_page_indicator: ^1.1.0 //
+  smooth_page_indicator: ^1.1.0 #pour indiquer la position de la page actuelle de manière visuelle
 
   #Icons
   iconsax: ^0.0.8
@@ -53,7 +53,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/icons/brands/
-    - assets/images/on_boarding_images
+    - assets/images/on_boarding_images/
     - assets/logos/
 
   #-------------------Local Fonts------------------------#

@@ -28,7 +28,7 @@ class TSizes{
   static const double appBarHeight = 56.0;
 
    //Images size
-  static const double ImageHeight = 14.0;
+  static const double ImageHeight = 80.0;
 
    //Default spacing between section 
   static const double defaultSpace = 24.0;
