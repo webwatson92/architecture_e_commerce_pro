@@ -1,4 +1,6 @@
+import 'package:e_commerce_pro/features/authetification/screens/password_configuration/forget_password.dart';
 import 'package:e_commerce_pro/features/authetification/screens/signup/signup.dart';
+import 'package:e_commerce_pro/navigation_menu.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:e_commerce_pro/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +20,7 @@ class TLoginForm extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              decoration:  const InputDecoration(prefix: Icon(Iconsax.direct_right), labelText: TTexts.email),
+              decoration:  const InputDecoration(prefixIcon: Icon(Iconsax.direct), labelText: TTexts.email),
             ),
             const SizedBox(height: TSizes.spaceBtwInputField,),
              TextFormField(
@@ -43,7 +45,8 @@ class TLoginForm extends StatelessWidget {
         
                   // Forget Password
                   TextButton(
-                    onPressed: (){},
+                    
+                    onPressed: () => Get.to(() => const ForgetPassword()),
                     child: const Text(TTexts.forgetPassword),
                   ),
                 ],
@@ -55,7 +58,7 @@ class TLoginForm extends StatelessWidget {
              SizedBox(
                width: double.infinity,
                child: ElevatedButton(
-                  onPressed: (){}, 
+                  onPressed: () => Get.to(() => const NavigationMenu()), 
                   child: const Text(TTexts.signIn)
                ),
              ),

@@ -20,15 +20,17 @@ class TTexts{
   static const String userName = "Username";
   static const String phoneNo = "Phone Number";
   static const String rememberMe = "Remember Me";
-  static const String forgetPassword = "Forget Password!";
+  static const String forgetPassword = "Forget Password";
   static const String signIn = "Sign In";
   static const String createAccount = "Create Account";
   static const String orSignInWith = "Or Sign In With";
   static const String orSignUpWith = "Or Sign Up With";
   static const String iAgreeTo = "I Agree To";
   static const String and = "And";
+  static const String done = "Done";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms Of Use";
+  static const String tContinue = "Continue";
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend Email In";
@@ -37,15 +39,15 @@ class TTexts{
   static const String loginTitle = "Welcome back";
   static const String loginSubTitle = "Discover Limitless Choices and Unmatched Convenience";
   static const String signupTitle = "Let's create your account";
+  static const String submit = "Submit";
   static const String forgetPasswordTitle = "Forget password";
-  static const String forgetPasswordSubTitle = "Don't worry sometimes google can forgo too";
+  static const String forgetPasswordSubTitle = "Don't worry sometimes people can forgot too, enter your email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
-  static const String changeYourPasswordSubTitle = "Your Account Security is our Priority We've Sent You a Secoure Link to Safely";
+  static const String changeYourPasswordSubTitle = "Your Account Security is our Priority We've Sent You a Secoure Link to Safely chanhe Your Password and keep Your Account Protected.";
   static const String confirmEmailTitle = "Verify your email address!";
-  static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify your Email to Start Shopping and Experience.";
+  static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify your Email to Start Shopping and Experience aWorld of Unrivaled Details and Personalized Offers.";
   static const String yourAccountCretedTitle = "Your account successfully created!";
-  static const String yourAccountCretedSubTitle = "Welcome to your Ultimate Shopping Destination: Your Account is Created, Unless...";
-
+  static const String yourAccountCretedSubTitle = "Welcome to your Ultimate Shopping Destination: Your Account is Created, Unleash the joy of seamless Online Shopping!";
 
   //Home
   static const String homeAppBarTitle = "Good day for shopping";
