@@ -1,7 +1,10 @@
-import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/circular_container.dart';
 import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/primary_header_container.dart';
+import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_container.dart';
+import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_appBar.dart';
-import 'package:e_commerce_pro/utils/constants/colors.dart';
+import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_categorie.dart';
+import 'package:e_commerce_pro/utils/constants/sizes.dart';
+import 'package:e_commerce_pro/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,26 +12,47 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    final dark = THelperFunctions.isDarkMode(context);
+
+    return  const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
+            // Header Container
             TPrimaryHeaderContainer(
-              child: Stack(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Positioned(top: -150, right: -250,child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1),),),
-                  Positioned(top: 100,right: -300,child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1),),),
-                  const Padding(
+                    Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: THomeAppBar(),
+                  ),
+                   SizedBox(height: TSizes.spaceBtwSections),
+
+                  //SEARCH BAR SECTION
+                   TSearchContainer(text: 'Search in store here',),
+                   SizedBox(height: TSizes.spaceBtwSections),
+
+                  //CATEGORIES SECTION
+                  Padding(
+                    padding:  EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        //Heading
+                         TSectionHeading(title: "Popular Categories", showActionButton: false, textColor:  Colors.white),
+                         SizedBox(height: TSizes.spaceBtwItems),
+
+                        //Categories
+                        THomeCategorie()
+                      ],
+                    ),
+
+                    //
                   ),
                 ],
               ),
             ),
-
-            //SearchBar HERE
-            
-            
           ],
         ),
       ),
