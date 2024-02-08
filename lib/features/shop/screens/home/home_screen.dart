@@ -21,8 +21,6 @@ class HomeScreen extends StatelessWidget {
             // Header Container
             TPrimaryHeaderContainer(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                     Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),

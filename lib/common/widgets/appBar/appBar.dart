@@ -6,7 +6,7 @@ import 'package:iconsax/iconsax.dart';
 class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   const TAppBar({
       Key? key, 
-      this.showBackArrow = true, 
+      this.showBackArrow = false, 
       this.title, 
       this.leadingIcon, 
       this.actions, 
