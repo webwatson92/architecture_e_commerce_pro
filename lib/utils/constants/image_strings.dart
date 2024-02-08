@@ -22,14 +22,14 @@ class TImages{
   static const String verifyIllustration = "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
 
   // -- Gategory Items
-  static const String sportIcon = "assets/icons/categories/icons8-bowling-64.png";
-  static const String clasthIcon = "assets/icons/categories/icons8-tailors-dummy-64.png";
-  static const String shoeIcon = "assets/icons/categories/3d-casual-life-bowling-ball-and-pin.png";
-  static const String cosmeticsIcon = "assets/icons/categories/icons8-cosmetics-dummy-64.png";
-  static const String animation = "assets/icons/categories/icons8-gos-heat-64.png";
-  static const String tayIcon = "assets/icons/categories/icons8-modern-toy-car-50.png";
-  static const String fournitureIcon = "assets/icons/categories/icons8-dinning-chair-64.png";
-  static const String jeweleryIcon = "assets/icons/categories/icons8-sparklink-diamond-64.png";
-  static const String electronicIcon = "assets/icons/categories/icons8-smartphone-64.png";
+  static const String sportIcon = "assets/icons/categories/3d-casual-life-bowling-ball-and-pin.png";
+  static const String clasthIcon = "assets/icons/categories/crafty-black-retro-sewing-machine-with-threads.png";
+  static const String shoeIcon = "assets/icons/categories/casual-life-3d-pink-sneakers-floating.png";
+  static const String cosmeticsIcon = "assets/icons/categories/weekday-young-woman-taking-care-of-her-skin.png";
+  static const String animation = "assets/icons/categories/droll-relaxing-man-with-a-cocktail-in-his-hands-floats-on-a-donut.png";
+  static const String tayIcon = "assets/icons/categories/bubble-gum-car.png";
+  static const String fournitureIcon = "assets/icons/categories/coworking-chair.png";
+  static const String jeweleryIcon = "assets/icons/categories/inky-black-ring-with-diamond.png";
+  static const String electronicIcon = "assets/icons/categories/colors-hand-holding-smartphone.png";
 
 }
