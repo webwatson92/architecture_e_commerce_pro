@@ -21,7 +21,7 @@ class TImages{
   static const String deliveredEmailIllustration = "assets/images/animations/sammy-line-man-receives-a-mail.png";
   static const String verifyIllustration = "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
 
-  // -- Gategory Items
+  // -- Gategory Icons
   static const String sportIcon = "assets/icons/categories/3d-casual-life-bowling-ball-and-pin.png";
   static const String clasthIcon = "assets/icons/categories/crafty-black-retro-sewing-machine-with-threads.png";
   static const String shoeIcon = "assets/icons/categories/casual-life-3d-pink-sneakers-floating.png";
@@ -31,5 +31,10 @@ class TImages{
   static const String fournitureIcon = "assets/icons/categories/coworking-chair.png";
   static const String jeweleryIcon = "assets/icons/categories/inky-black-ring-with-diamond.png";
   static const String electronicIcon = "assets/icons/categories/colors-hand-holding-smartphone.png";
+
+  //Banners
+  static const String promoBanner1 = "assets/images/banners/banner1.png";
+  static const String promoBanner2 = "assets/images/banners/banner2.png";
+  static const String promoBanner3 = "assets/images/banners/banner3.png";
 
 }

@@ -20,6 +20,7 @@ dependencies:
   url_launcher: ^6.1.12
   flutter_native_splash: ^2.3.10
   smooth_page_indicator: ^1.1.0 #pour indiquer la position de la page actuelle de manière visuelle
+  carousel_slider: ^4.2.1
 
   #Icons
   iconsax: ^0.0.8
@@ -56,6 +57,7 @@ flutter:
     - assets/icons/categories/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/images/banners/
     - assets/logos/
 
   #-------------------Local Fonts------------------------#

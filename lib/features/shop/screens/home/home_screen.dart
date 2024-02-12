@@ -3,6 +3,8 @@ import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_co
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_appBar.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_categorie.dart';
+import 'package:e_commerce_pro/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:e_commerce_pro/utils/constants/image_strings.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:e_commerce_pro/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -14,12 +16,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
 
-    return  const Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Header Container
-            TPrimaryHeaderContainer(
+             TPrimaryHeaderContainer(
               child: Column(
                 children: [
                     Padding(
@@ -51,10 +53,18 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            //BODY ---Here
+            Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(banner: [
+                TImages.promoBanner2,
+                TImages.promoBanner3,
+              ],),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
