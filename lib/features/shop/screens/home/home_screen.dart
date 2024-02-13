@@ -1,5 +1,7 @@
 import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/primary_header_container.dart';
 import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_container.dart';
+import 'package:e_commerce_pro/common/widgets/layouts/grid_layout.dart';
+import 'package:e_commerce_pro/common/widgets/products/product_cards/popular_card_vertical.dart';
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_appBar.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_categorie.dart';
@@ -15,13 +17,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+    final List<String> product;
 
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Header Container
-             TPrimaryHeaderContainer(
+              const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                     Padding(
@@ -56,11 +59,18 @@ class HomeScreen extends StatelessWidget {
 
             //BODY ---Here
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(banner: [
-                TImages.promoBanner2,
-                TImages.promoBanner3,
-              ],),
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  // -- PROMO SLIDER 
+                  const TPromoSlider(banner: [TImages.promoBanner2, TImages.promoBanner3,],),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  
+                  // -- Produit populaire
+                  // for(int i=0; i<product.length; i++)
+                    TGridLayout(itemCount: 2, itemBuilder:  (_, index) => const TPopularCardVertical(), ),
+                ],
+              ),
             ),
           ],
         ),
