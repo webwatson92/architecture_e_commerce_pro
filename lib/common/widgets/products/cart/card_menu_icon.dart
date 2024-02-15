@@ -5,20 +5,21 @@ import 'package:iconsax/iconsax.dart';
 class TCardCounterIcon extends StatelessWidget {
   const TCardCounterIcon({
     super.key, 
-    required this.iconColor, 
+    this.iconColor = TColors.light, 
     required this.onPressed,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
+
     return Stack(
       children:[
         IconButton(
           onPressed: () {},
-          icon: const Icon(Iconsax.shopping_bag, color: TColors.white),
+          icon: Icon(Iconsax.shopping_bag, color: iconColor),
         ),
         Positioned(
           top: 2,

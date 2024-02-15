@@ -48,5 +48,12 @@ class TImages{
 
   //
 
+  // Features Icons 
+  static const String clothIcon = "assets/images/banners/noun-clothes-4464266.png";
+  static const String clothIcon2 = "assets/images/banners/noun-clothes-4464266.png";
+  static const String clothIcon3 = "assets/images/banners/noun-clothes-4464266.png";
+  static const String clothIcon4 = "assets/images/banners/noun-clothes-4464266.png";
+  static const String clothIcon5 = "assets/images/banners/noun-clothes-4464266.png";
+
 
 }

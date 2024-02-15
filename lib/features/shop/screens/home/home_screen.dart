@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                    SizedBox(height: TSizes.spaceBtwSections),
 
                   //SEARCH BAR SECTION
-                   TSearchContainer(text: 'Search in store here',),
+                   TSearchContainer(text: 'Search in store here', showBackground: false, showBorder: true, padding: EdgeInsets.all(TSizes.spaceBtwItems),),
                    SizedBox(height: TSizes.spaceBtwSections),
 
                   //CATEGORIES SECTION
@@ -65,10 +65,15 @@ class HomeScreen extends StatelessWidget {
                   // -- PROMO SLIDER 
                   const TPromoSlider(banner: [TImages.promoBanner2, TImages.promoBanner3,],),
                   const SizedBox(height: TSizes.spaceBtwItems),
+
+                  //Heading
+                  TSectionHeading(title: "Popular Categories", onPressed: (){}),
+                  const SizedBox(height: TSizes.spaceBtwItems,),
                   
                   // -- Produit populaire
                   // for(int i=0; i<product.length; i++)
-                    TGridLayout(itemCount: 2, itemBuilder:  (_, index) => const TPopularCardVertical(), ),
+                  TGridLayout(itemCount: 2, itemBuilder:  (_, index) => const TPopularCardVertical(), ),
+                
                 ],
               ),
             ),
