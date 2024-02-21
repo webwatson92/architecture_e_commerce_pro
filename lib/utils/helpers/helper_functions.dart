@@ -10,6 +10,10 @@ class THelperFunctions {
       return Colors.green;
     }else if (value == 'Red'){
       return Colors.green;
+    }else if (value == 'Yellow'){
+      return Colors.yellow;
+    }else if (value == 'Orange'){
+      return Colors.orange;
     }else if (value == 'Blue'){
       return Colors.blue;
     }else if (value == 'Pink'){
