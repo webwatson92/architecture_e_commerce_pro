@@ -13,7 +13,7 @@ class TPopularCardHorizontal extends StatelessWidget {
 
     return Container(
       width: 180, 
-      padding: EdgeInsets.all(1),
+      padding: const EdgeInsets.all(1),
       decoration: BoxDecoration(
         boxShadow: [TShadowStyle.verticalProductShadow], 
         borderRadius: BorderRadius.circular(TSizes.productImageRadius),

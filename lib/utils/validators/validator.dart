@@ -6,7 +6,7 @@ class TValidator {
     }
 
     //Regular expression for email validation
-    final emailRegExp = RegExp('/^[a-zA-Z0-9._%+-]{+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/');
+    final emailRegExp = RegExp('/^[a-zA-Z0-9._%+-]{+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}/');
 
     if(!emailRegExp.hasMatch(value)){
       return 'Invalid email address.';

@@ -1,7 +1,7 @@
 import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/primary_header_container.dart';
 import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_container.dart';
 import 'package:e_commerce_pro/common/widgets/layouts/grid_layout.dart';
-import 'package:e_commerce_pro/common/widgets/products/product_cards/popular_card_vertical.dart';
+import 'package:e_commerce_pro/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_appBar.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_categorie.dart';
@@ -53,6 +53,8 @@ class HomeScreen extends StatelessWidget {
 
                     //
                   ),
+
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -72,8 +74,8 @@ class HomeScreen extends StatelessWidget {
                   
                   // -- Produit populaire
                   // for(int i=0; i<product.length; i++)
-                  TGridLayout(itemCount: 2, itemBuilder:  (_, index) => const TPopularCardVertical(), ),
-                
+                  TGridLayout(itemCount: 2, itemBuilder:  (_, index) => const TProductCardVertical(), ),
+                  
                 ],
               ),
             ),

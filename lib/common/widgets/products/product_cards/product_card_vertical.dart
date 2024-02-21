@@ -5,24 +5,24 @@ import 'package:e_commerce_pro/common/widgets/products/product_cards/product_pri
 import 'package:e_commerce_pro/common/widgets/products/rounded_container.dart';
 import 'package:e_commerce_pro/common/widgets/texts/product_title_text.dart';
 import 'package:e_commerce_pro/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:e_commerce_pro/features/shop/screens/profuct_details/product_detail.dart';
 import 'package:e_commerce_pro/utils/constants/colors.dart';
 import 'package:e_commerce_pro/utils/constants/image_strings.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:e_commerce_pro/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TPopularCardVertical extends StatelessWidget {
-  const TPopularCardVertical({super.key});
+class TProductCardVertical extends StatelessWidget {
+  const TProductCardVertical({super.key});
 
   @override
   Widget build(BuildContext context) {
    final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {
-        print("clicker");
-      },
+      onTap: () => Get.to(() => const DetailScreen()),
       child: Container(
         width: 180, 
         padding: const EdgeInsets.all(1),
@@ -79,7 +79,7 @@ class TPopularCardVertical extends StatelessWidget {
               ),
             ),
             //Spacer
-            Spacer(),
+            const Spacer(),
             
             //Price Row
             Row(
@@ -98,9 +98,7 @@ class TPopularCardVertical extends StatelessWidget {
                     ),
                   ),
                   child: const SizedBox(
-                    width: TSizes.iconLg * 1.2,
-                    height: TSizes.iconLg * 1.2,
-                    child: Center(child: Icon(Iconsax.add, color: TColors.white))
+                   
                   ),
                 )
               ],

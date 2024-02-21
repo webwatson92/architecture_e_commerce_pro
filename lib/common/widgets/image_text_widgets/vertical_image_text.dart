@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class TVerticalImageText extends StatelessWidget {
   const TVerticalImageText({
     super.key, 
-    this.backgroundColor = Colors.white, 
+    this.backgroundColor, 
     required this.title, 
     this.textColor = Colors.white, 
     this.onTap,
