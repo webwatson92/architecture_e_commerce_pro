@@ -1,4 +1,5 @@
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_pro/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:e_commerce_pro/features/shop/screens/profuct_details/widgets/buttom_add_to_cart_widget.dart';
 import 'package:e_commerce_pro/features/shop/screens/profuct_details/widgets/product_attributes.dart';
 import 'package:e_commerce_pro/features/shop/screens/profuct_details/widgets/product_detail_image_slider.dart';
@@ -6,6 +7,7 @@ import 'package:e_commerce_pro/features/shop/screens/profuct_details/widgets/pro
 import 'package:e_commerce_pro/features/shop/screens/profuct_details/widgets/rating_share_widget.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -61,7 +63,7 @@ class DetailScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                          const TSectionHeading(title: "Reviens (199)", showActionButton: false,), 
-                         IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_3, size: 18)),
+                         IconButton(onPressed: () => Get.to(() => const ProductReviwsScreen()), icon: const Icon(Iconsax.arrow_right_3, size: 18)),
                       ],
                     ), 
                     const SizedBox(height: TSizes.spaceBtwSections,),
