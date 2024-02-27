@@ -1,19 +1,18 @@
 import 'package:e_commerce_pro/common/widgets/appBar/appBar.dart';
+import 'package:e_commerce_pro/common/widgets/products/ratings/rating_widget.dart';
 import 'package:e_commerce_pro/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
-import 'package:e_commerce_pro/utils/constants/colors.dart';
+import 'package:e_commerce_pro/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProductReviwsScreen extends StatelessWidget {
   const ProductReviwsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return   Scaffold(
       /// AppBar
-      appBar: const TAppBar(title: Text("Reviens & Rating"), showBackArrow: true,),
+      appBar: const TAppBar(title: Text("Reviews & Rating"), showBackArrow: true,),
 
       /// Body
       body: SingleChildScrollView(
@@ -27,12 +26,14 @@ class ProductReviwsScreen extends StatelessWidget {
 
               /// Overrall Product Rating
               const TOverrallProductRating(),
-              RatingBarIndicator(
-                rating: 3.5,
-                itemSize: 20.0,
-                unratedColor: TColors.grey,
-                itemBuilder: (_, __) => const Icon(Iconsax.star1, color: TColors.primaryColors),   
-              ),
+              const TRatingBarIndicator(rating: 3.5,),
+              Text('12,611', style: Theme.of(context).textTheme.bodySmall),
+              const SizedBox(height: TSizes.spaceBtwSections,),
+
+              /// User Reviews List
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
 
             ],
           ),
@@ -41,3 +42,4 @@ class ProductReviwsScreen extends StatelessWidget {
     );
   }
 }
+
