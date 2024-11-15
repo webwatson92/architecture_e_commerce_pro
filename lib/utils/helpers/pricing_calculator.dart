@@ -26,6 +26,7 @@ class TPricingCalculator{
     return taxAmount.toStringAsFixed(2);
   }
 
+  /// --
   static double getTaxRateForLocation(String location){
     return 0.10; //Exemple tax rate of 10%
   }

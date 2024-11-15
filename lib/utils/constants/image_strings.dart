@@ -36,9 +36,19 @@ class TImages{
   static const String promoBanner1 = "assets/images/banners/banner1.png";
   static const String promoBanner2 = "assets/images/banners/banner2.png";
   static const String promoBanner3 = "assets/images/banners/banner3.png";
+  static const String promoBanner4 = "assets/images/banners/banner4.png";
 
   // Product Reviews
   
+
+  // Payment Method
+    static const String applePlay = "assets/icons/payment_methods/apple_play.png";
+    static const String googlePlay = "assets/icons/payment_methods/google_play.png";
+    static const String wave = "assets/icons/payment_methods/wave.png";
+    static const String paypal = "assets/icons/payment_methods/paypal.png";
+    static const String visa = "assets/icons/payment_methods/visa.png";
+    static const String successfulPaymentIcon = "assets/icons/payment_methods/successfulPaymentIcon.png";
+
 
   //Products
   // static const String productImage1 = "assets/images/products/icons8-shoes-100.png"

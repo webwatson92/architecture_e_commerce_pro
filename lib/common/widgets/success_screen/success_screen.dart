@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
-    super.key, 
-    required this.image, 
-    required this.title, 
-    required this.subTitle, 
+    super.key,
+    required this.image,
+    required this.title,
+    required this.subTitle,
     required this.onPressed
   });
 
@@ -41,9 +41,6 @@ class SuccessScreen extends StatelessWidget {
               //Buttons
               SizedBox(width: double.infinity, child: ElevatedButton(onPressed: onPressed, child: const Text(TTexts.tContinue))),
             ],
-            
-           
-
             
           ),
         ),

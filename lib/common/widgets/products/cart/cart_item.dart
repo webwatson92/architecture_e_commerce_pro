@@ -19,8 +19,8 @@ class TCartItem extends StatelessWidget {
       children: [
         /// Image
         Container(
-          width: 60, 
-          height: 60, 
+          width: 50, 
+          height: 50, 
           alignment: Alignment.centerLeft,
           child: TRoundedImage(
             imageUrl: TImages.sportIcon,
@@ -49,13 +49,10 @@ class TCartItem extends StatelessWidget {
                     TextSpan(text: "Green ", style: Theme.of(context).textTheme.bodyLarge),
                     TextSpan(text: "Size ", style: Theme.of(context).textTheme.bodySmall),
                     TextSpan(text: "UK OB ", style: Theme.of(context).textTheme.bodyLarge),
-                  
                   ]
                 )
               )
-              
-            
-          
+
             ],
           ),
         ),

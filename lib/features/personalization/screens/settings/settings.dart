@@ -5,6 +5,8 @@ import 'package:e_commerce_pro/common/widgets/list_titles/user_profile_title.dar
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_pro/features/personalization/screens/address/address.dart';
 import 'package:e_commerce_pro/features/personalization/screens/profile/profile.dart';
+import 'package:e_commerce_pro/features/shop/screens/cart/cart.dart';
+import 'package:e_commerce_pro/features/shop/screens/orders/order.dart';
 import 'package:e_commerce_pro/utils/constants/colors.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -42,8 +44,8 @@ class SettingScreen extends StatelessWidget {
                     const SizedBox(height: TSizes.spaceBtwItems,),
 
                     TSettingsMenuTitle(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set shopping delivry address',onTap: () => Get.to(() => const UserAddressScreen()), ),
-                    TSettingsMenuTitle(icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'Add, remove products and move to checkout',onTap: (){}, ),
-                    TSettingsMenuTitle(icon: Iconsax.bag_tick, title: 'My order', subTitle: 'In-progress and Completed Orders',onTap: (){}, ),
+                    TSettingsMenuTitle(icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'Add, remove products and move to checkout',onTap: () => Get.to(() => const CartScreen() ), ),
+                    TSettingsMenuTitle(icon: Iconsax.bag_tick, title: 'My order', subTitle: 'In-progress and Completed Orders',onTap: () => Get.to(() => const OrderScreen() ), ),
                     TSettingsMenuTitle(icon: Iconsax.bank, title: 'Bank account', subTitle: 'Withdraw balance to registered bank account',onTap: (){}, ),
                     TSettingsMenuTitle(icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all the discounted coupons',onTap: (){}, ),
                     TSettingsMenuTitle(icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification message',onTap: (){}, ),
