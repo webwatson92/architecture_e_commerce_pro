@@ -5,11 +5,13 @@ import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_co
 import 'package:e_commerce_pro/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_pro/common/widgets/products/cart/card_menu_icon.dart';
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_pro/features/shop/screens/brands/all_brands.dart';
 import 'package:e_commerce_pro/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:e_commerce_pro/utils/constants/colors.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:e_commerce_pro/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
@@ -54,7 +56,7 @@ class Store extends StatelessWidget {
                     const SizedBox(height: TSizes.spaceBtwItems,),
       
                     // --- Features Brands
-                    TSectionHeading(title: "Features Brands", onPressed: (){},),
+                    TSectionHeading(title: "Featured Brands", onPressed: () => Get.to(const AllBrandsScreen()),),
                     const SizedBox(height: TSizes.spaceBtwItems / 1.5),
       
                     // --- Brands GRID

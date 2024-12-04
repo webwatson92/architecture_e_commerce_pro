@@ -3,6 +3,7 @@ import 'package:e_commerce_pro/common/widgets/custom_chapes/containers/search_co
 import 'package:e_commerce_pro/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_pro/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce_pro/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_pro/features/shop/screens/all_products/all_products.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_appBar.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/home_categorie.dart';
 import 'package:e_commerce_pro/features/shop/screens/home/widgets/promo_slider.dart';
@@ -10,6 +11,7 @@ import 'package:e_commerce_pro/utils/constants/image_strings.dart';
 import 'package:e_commerce_pro/utils/constants/sizes.dart';
 import 'package:e_commerce_pro/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -69,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwItems),
 
                   //Heading
-                  TSectionHeading(title: "Popular Categories", onPressed: (){}),
+                  TSectionHeading(title: "Popular Products", onPressed: () => Get.to(const AllProducts())),
                   const SizedBox(height: TSizes.spaceBtwItems,),
                   
                   // -- Produit populaire
